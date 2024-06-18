@@ -10,3 +10,18 @@
     --grayish-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%);
 }
+
+@font-face {
+    font-family: barlow;
+    src: url(./fonts/Barlow-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: frauncesBlack;
+    src: url(./fonts/Fraunces_144pt-Black.ttf);
+}
+
+@font-face {
+    font-family: frauncesBold;
+    src: url(./fonts/Fraunces_144pt-Bold.ttf);
+}
