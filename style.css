@@ -18,12 +18,12 @@
 
 @font-face {
     font-family: frauncesBlack;
-    src: url(./fonts/Fraunces_144pt-Black.ttf);
+    src: url(./fonts/Fraunces_9pt-Black.ttf);
 }
 
 @font-face {
     font-family: frauncesBold;
-    src: url(./fonts/Fraunces_144pt-Bold.ttf);
+    src: url(./fonts/Fraunces_9pt-Bold.ttf);
 }
 
 *, *::before, *::after {
@@ -35,6 +35,7 @@
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 button {
@@ -47,9 +48,60 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: barlow;
+    text-align: center;
+}
+
+body > * {
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, button {
     font-family: frauncesBlack;
     font-weight: bold;
 }
+
+.landing-sect {
+    background-image: url(./images/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--white);
+    font-size: clamp(1.65rem, 5.5vw, 2.5rem);
+    padding: 1.25em .95em 5em .95em;
+    letter-spacing: .25em;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: clamp(7.75rem, 20vw, 10rem);
+    cursor: pointer;
+}
+
+.nav-btns {
+    display: none;
+}
+
+.hamburger-img {
+    width: 1.5rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.landing-title {
+    padding: 1.5em 0 .5em;
+}
+
+.dwn-arrow {
+    width: 2.25rem;
+}
+
