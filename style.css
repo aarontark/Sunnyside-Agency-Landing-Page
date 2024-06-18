@@ -25,3 +25,18 @@
     font-family: frauncesBold;
     src: url(./fonts/Fraunces_144pt-Bold.ttf);
 }
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+}
