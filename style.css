@@ -40,3 +40,16 @@ img {
 button {
     font: inherit;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: barlow;
+}
+
+h1, h2, h3, h4, h5, button {
+    font-family: frauncesBlack;
+    font-weight: bold;
+}
