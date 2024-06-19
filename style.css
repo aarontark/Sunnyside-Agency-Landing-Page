@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, button {
 }
 
 .image-desc {
-    padding: 3.75em 2em 4.25em;
+    padding: 3.75em 1.75em 4.25em;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -145,4 +145,33 @@ h1, h2, h3, h4, h5, button {
 
 .red-btn {
     border-bottom: 5px solid var(--soft-red);
+}
+
+.desc-background {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 25em 1.25em 3.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.desc-background > h3 {
+    font-size: 1.75rem;
+}
+
+.desc-background > p {
+    line-height: 1.75rem;
+    font-size: 1rem;
+}
+
+.design-card {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+    color: var(--graphic-design-text);
+}
+
+.photo-card {
+    background-image: url(./images/mobile/image-photography.jpg);
+    color: var(--photography-text);
 }
