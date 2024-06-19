@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, button {
 }
 
 .image-desc {
-    padding: 3.75em 1.75em 4.25em;
+    padding: 3.75em 2em 4.25em;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
