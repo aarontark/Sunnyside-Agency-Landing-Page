@@ -175,3 +175,55 @@ h1, h2, h3, h4, h5, button {
     background-image: url(./images/mobile/image-photography.jpg);
     color: var(--photography-text);
 }
+
+.testimonial-section {
+    padding: 3.75em 1.5em 6em;
+    background-color: #fffbf8;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.testimonial-title {
+    color: var(--grayish-blue);
+    letter-spacing: .25em;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testimonial-img {
+    width: 100%;
+    max-width: 4.5rem;
+    border-radius: 50%;
+}
+
+.testimonial-para {
+    font-size: 1.12rem;
+    line-height: 2rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.testimonial-name {
+    font-size: 1.12rem;
+    color: var(---dark-desaturated-blue)
+}
+
+.job-title {
+    display: block;
+    font-size: .85rem;
+    font-family: barlow;
+    color: var(--grayish-blue);
+    margin-top: .75rem;
+}
+
