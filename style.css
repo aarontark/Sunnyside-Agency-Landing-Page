@@ -227,3 +227,8 @@ h1, h2, h3, h4, h5, button {
     margin-top: .75rem;
 }
 
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
