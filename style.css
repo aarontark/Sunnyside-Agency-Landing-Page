@@ -32,15 +32,6 @@
     box-sizing: border-box;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-button {
-    font: inherit;
-}
 
 body {
     display: flex;
@@ -55,9 +46,29 @@ body > * {
     width: 100%;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1, h2, h3, h4, h5, button {
     font-family: frauncesBlack;
     font-weight: bold;
+}
+
+
+li {
+    list-style: none;
 }
 
 .landing-sect {
@@ -85,6 +96,8 @@ h1, h2, h3, h4, h5, button {
 .logo {
     width: clamp(7.75rem, 20vw, 10rem);
     cursor: pointer;
+    fill: var(--white) !important;
+    color: var(--white) !important;
 }
 
 .nav-btns {
@@ -137,6 +150,7 @@ h1, h2, h3, h4, h5, button {
     border: none;
     padding: 0 .25em;
     color: var(--dark-desaturated-blue);
+    cursor: pointer;
 }
 
 .yellow-btn {
@@ -177,7 +191,7 @@ h1, h2, h3, h4, h5, button {
 }
 
 .testimonial-section {
-    padding: 3.75em 1.5em 6em;
+    padding: 3.75em 1.5em;
     background-color: #fffbf8;
     display: flex;
     flex-direction: column;
@@ -216,7 +230,7 @@ h1, h2, h3, h4, h5, button {
 
 .testimonial-name {
     font-size: 1.12rem;
-    color: var(---dark-desaturated-blue)
+    color: var(---dark-desaturated-blue);
 }
 
 .job-title {
@@ -232,3 +246,45 @@ h1, h2, h3, h4, h5, button {
     grid-template-columns: 1fr 1fr;
 }
 
+.footer {
+    background-color: #91d4c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    color: var(--footer);
+    position: relative;
+    padding: 4em .5em 5em;
+}
+
+.logo-wrapper {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(56%) saturate(350%) hue-rotate(117deg) brightness(91%) contrast(85%);
+}
+
+.footer-logo {
+    width: 11rem;
+}
+
+.directory {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
+.directory-links {
+    font-size: 1.12rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    color: hsl(167, 40%, 24%);
+    margin-top: 2.5em;
+    gap: 1.75rem;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: .85rem;
+}

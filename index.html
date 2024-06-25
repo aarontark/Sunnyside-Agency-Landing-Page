@@ -11,7 +11,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -80,11 +80,13 @@
     <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Image of sugercubes.">
   </section>
   <footer class="footer">
-    <img src="./images/logo.svg" alt="Sunnyset logo.">
+    <a class="logo-wrapper" href="">
+      <img class="footer-logo" src="./images/logo.svg" alt="Sunnyset logo.">
+    </a>
     <ul class="directory">
-      <li><a href="">About</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Projects</a></li>
+      <li><a class="directory-links" href="">About</a></li>
+      <li><a class="directory-links" href="">Services</a></li>
+      <li><a class="directory-links" href="">Projects</a></li>
     </ul>
     <ul class="socials">
       <li><a href=""><img src="./images/icon-facebook.svg" alt="Link to Facebook."></a></li>
@@ -93,7 +95,7 @@
       <li><a href=""><img src="./images/icon-pinterest.svg" alt="Link to Pinterest."></a></li>
     </ul>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://www.instagram.com/whokilledaaronscott/">Aaron Tarkington</a>.
     </div>
   </footer>
