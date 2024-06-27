@@ -132,13 +132,13 @@ li {
 }
 
 .desc-title {
-    font-size: 2rem;
+    font-size: clamp(2rem, 8vw, 3rem);
     font-family: frauncesBlack;
     color: var(---dark-desaturated-blue);
 }
 
 .desc-para {
-    font-size: 1.12rem;
+    font-size: clamp(1.12rem, 4.5vw, 1.18rem);
     line-height: 1.9rem;
     color: var(--dark-grayish-blue);
 }
@@ -254,7 +254,7 @@ li {
     gap: 2.5rem;
     color: var(--footer);
     position: relative;
-    padding: 4em .5em 5em;
+    padding: 4em .5em 4em;
 }
 
 .logo-wrapper {
@@ -287,4 +287,109 @@ li {
     position: absolute;
     bottom: 0;
     font-size: .85rem;
+}
+
+@media all and (min-width: 56.25em) {
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .navbar {
+        align-items: center;
+    }
+
+    .nav-btns {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .nav-btns > p {
+        font-size: 1.12rem;
+        letter-spacing: 0;
+        cursor: pointer;
+    }
+
+    .nav-btns > p:hover {
+        opacity: 0.9;
+    }
+
+    .contact-btn {
+        font-size: 1rem;
+        padding: 1.25em 2em;
+        background: var(--white);
+        border: none;
+        border-radius: 2em;
+        cursor: pointer;
+    }
+
+    .contact-btn:hover {
+        color: var(--white);
+        background-color: #ffffff63;
+    }
+
+    .hamburger-img {
+        display: none;
+    }
+
+    .landing-sect {
+        height: 100vh;
+        background-image: url(./images/desktop/image-header.jpg);
+        padding-top: .75em;
+    }
+
+    .dwn-arrow {
+        margin-top: 1em;
+        width: 2.5rem;
+    }
+
+    .desc-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .standout-img, .transform-img {
+        height: 100%;
+    }
+
+    .transform-card {
+        order: -1;
+    }
+
+    .image-desc {
+        justify-content: center;
+        text-align: left;
+        gap: 3rem;
+        padding-block: 5em;
+        padding-right: clamp(1.75em, 8vw, 8em);
+        padding-left: clamp(1.75em, 11vw, 12em);
+    }
+
+    .desc-btn {
+        align-self: start;
+    }
+
+    .design-card {
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+    }
+
+    .photo-card {
+        background-image: url(./images/desktop/image-photography.jpg);
+    }
+
+    .testimonial-section {
+        padding: 8em 8em;
+    }
+
+    .testimonial-wrapper {
+        flex-direction: row;
+    }
+
+    .img-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
