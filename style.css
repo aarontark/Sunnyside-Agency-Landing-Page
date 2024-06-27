@@ -168,16 +168,17 @@ li {
     padding: 25em 1.25em 3.25em;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     gap: 1.75rem;
 }
 
 .desc-background > h3 {
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 .desc-background > p {
     line-height: 1.75rem;
-    font-size: 1.12rem;
+    font-size: clamp(1.12rem, 3vw, 1.20rem);
 }
 
 .design-card {
@@ -364,7 +365,7 @@ li {
         justify-content: center;
         text-align: left;
         gap: 3rem;
-        padding-block: 5em;
+        padding-block: 3em;
         padding-right: clamp(1.75em, 8vw, 8em);
         padding-left: clamp(1.75em, 11vw, 12em);
     }
@@ -375,6 +376,12 @@ li {
 
     .design-card {
         background-image: url(./images/desktop/image-graphic-design.jpg);
+    }
+
+    .desc-background {
+        padding-inline: 10em;
+        padding-top: 25em;
+        gap: 2rem;
     }
 
     .photo-card {
@@ -391,6 +398,7 @@ li {
     }
 
     .testimonial-card {
+        justify-content: space-between;
         gap: 3rem;
     }
 
