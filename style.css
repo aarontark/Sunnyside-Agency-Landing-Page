@@ -379,8 +379,8 @@ li {
     }
 
     .desc-background {
-        padding-inline: 10em;
-        padding-bottom: 2em;
+        padding-inline: clamp(4em, 10.75vw, 15em);
+        padding-bottom: clamp(2em, 4vw, 5em);
         gap: 2rem;
     }
 
