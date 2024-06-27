@@ -201,6 +201,7 @@ li {
 .testimonial-title {
     color: var(--grayish-blue);
     letter-spacing: .25em;
+    font-size: clamp(1rem, 2.25vw, 1.25rem);
 }
 
 .testimonial-wrapper {
@@ -223,19 +224,19 @@ li {
 }
 
 .testimonial-para {
-    font-size: 1.12rem;
+    font-size: clamp(1.12rem, 1.4vw, 1.25rem);
     line-height: 2rem;
     color: var(--very-dark-grayish-blue);
 }
 
 .testimonial-name {
-    font-size: 1.12rem;
+    font-size: clamp(1.12rem, 2vw, 1.25rem);
     color: var(---dark-desaturated-blue);
 }
 
 .job-title {
     display: block;
-    font-size: .85rem;
+    font-size: clamp(.85rem, 1vw, 1.12rem);
     font-family: barlow;
     color: var(--grayish-blue);
     margin-top: .75rem;
@@ -381,11 +382,16 @@ li {
     }
 
     .testimonial-section {
-        padding: 8em 8em;
+        padding: 11.75em 8em;
     }
 
     .testimonial-wrapper {
         flex-direction: row;
+        gap: 2.75rem;
+    }
+
+    .testimonial-card {
+        gap: 3rem;
     }
 
     .img-grid {
