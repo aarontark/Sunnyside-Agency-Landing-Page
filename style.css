@@ -372,13 +372,12 @@ li {
         font-size: 1.12rem;
     }
 
-    .nav-btns > p {
-        font-size: 1.12rem;
+    .nav-btns > a {
         letter-spacing: 0;
         cursor: pointer;
     }
 
-    .nav-btns > p:hover {
+    .nav-btns > a:hover {
         opacity: 0.9;
     }
 
